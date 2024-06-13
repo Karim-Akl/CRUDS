@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #222;
+    color: white;
+    width: auto;
+
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+p{
+    margin: 15px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+.input{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: #222;
+    display: flex;
+    color: white;
+    /* justify-content: space-between; */
+
+}
+#title{
+    width: 99%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #070101bb;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+#title:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+.price{
+    width: 101%;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+#price ,#taxes ,#ads,#discount{
+    width: 20%;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #070101bb;
+    padding: 5px;
+    display: flex;
+    margin-right: 5px;
+    color: white;
+    outline: none;
+
+}
+
+#price:focus ,#taxes:focus ,#ads:focus,#discount:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+#total{
+    width: 13%;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+
+}
+#total::before{
+    content: "Total:";
+}
+#count{
+    width: 99%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #070101bb;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+}
+
+#category{
+    width: 99%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #070101bb;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+}
+#count:focus, #category:focus,#Search:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+#sum{
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #871cca68;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #51025f;
+    letter-spacing: 5px;
+    
+}
+#Search {
+    width: 99%;
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #070101bb;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+    
+}
+.tipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+#Search_T{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #871cca68;
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    color: white;
+
+
+}
+#Search_C{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #871cca68;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+
+}
+table{
+    border: wheat solid;
+    width: 100%;
+    border-radius: 2px;
+    align-items: center;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+thead{
+    border: white solid 2px;
+}
+#DELETE ,#UPDATE{
+    background-color:#871cca68 ;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+
+}
+.btnDelete{
+    background-color:#871cca68 ;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    transition: .7s
+;
+
+}
+.btnDelete:hover,#DELETE:hover{
+    background-color:rgb(255, 0, 0);
+}
+
+@media only screen and (max-width: 740px){
+
+    /* #tab{
+        padding: 1px;
+        font-weight: 100;
+        font-size: small;
+    } */
+     #tab,.body{
+        font-weight:100;
+        font-size: 10px;
+        color: #decfe1;
+        
+    }
+}
+@media only screen and (max-width: 500px){
+    #Dis,#ka{
+        display: none;
+    }
+}
